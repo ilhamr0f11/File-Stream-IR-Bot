@@ -63,17 +63,15 @@ async def start(b, m):
                 return
         await m.reply_text(
             text="""
-<i>👋 ꜰɪʟᴇ ᴛᴏ ʟɪɴᴋ ʙᴏᴛ ᴡɪᴛʜ ʙᴏᴛʜ ᴅᴏᴡɴʟᴏᴀᴅ ᴀɴᴅ ꜱᴛʀᴇᴀᴍ ʟɪɴᴋ ꜱᴜᴘᴘᴏʀᴛ</i>\n
-<i>Send a file/video and see magic!<i>\n
-<i>Cʟɪᴄᴋ ᴏɴ /help ᴛᴏ ɢᴇᴛ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ</i>\n
+<i> Hi, I am File to Direct Link IR Bot, I Can give You Download / Stream Link </i>\n
+<i> Send a file/video and see magic!<i>\n
 <i><b>🍃 Bᴏᴛ Made Bʏ :</b>@IRBotsUpdate</i>\n\n
 <i><b>It is your responsibility to use wisely I dont take responsibilities of any voilations(of any kind)</i>\n
 <i><u>𝗪𝗔𝗥𝗡𝗜𝗡𝗚 🚸</u></i>\n
 <b>Dont Spam.</b>""",
             parse_mode="HTML",
             disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup( [ [InlineKeyboardButton('Owner', url=f"https://t.me/{Var.OWNER_USERNAME}"),
-                                                                                       InlineKeyboardButton('Follow ', url='https://github.com/ilhamr0f11') ] ]  ) )
+            reply_markup=InlineKeyboardMarkup( [ [InlineKeyboardButton('🤖 More Bots and Support Channel 🤖', url=f"https://t.me/IRBotsUpdate") ] ]  ) )
                                                                                        
                                                                                        
                                                                             
@@ -84,7 +82,7 @@ async def start(b, m):
                 if user.status == "kicked":
                     await b.send_message(
                         chat_id=m.chat.id,
-                        text="**Sᴏʀʀʏ Sɪʀ, Yᴏᴜ ᴀʀᴇ Bᴀɴɴᴇᴅ ᴛᴏ ᴜsᴇ ᴍᴇ. Qᴜɪᴄᴋʟʏ ᴄᴏɴᴛᴀᴄᴛ** @adarsh_status_bot",
+                        text="**Sorry, You're banned to use me",
                         parse_mode="markdown",
                         disable_web_page_preview=True
                     )
