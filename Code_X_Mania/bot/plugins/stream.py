@@ -35,7 +35,7 @@ async def private_receive_handler(c: Client, m: Message):
             if user.status == "kicked":
                 await c.send_message(
                     chat_id=m.chat.id,
-                    text="__Sᴏʀʀʏ Sɪʀ, Yᴏᴜ ᴀʀᴇ Bᴀɴɴᴇᴅ ᴛᴏ ᴜsᴇ ᴍᴇ.__\n\n  **Cᴏɴᴛᴀᴄᴛ Dᴇᴠᴇʟᴏᴘᴇʀ @LhRfi Tʜᴇʏ Wɪʟʟ Hᴇʟᴘ Yᴏᴜ**",
+                    text="__Sorry, You're banned to use me.__\n\n  **Cᴏɴᴛᴀᴄᴛ Dᴇᴠᴇʟᴏᴘᴇʀ @LhRfi Tʜᴇʏ Wɪʟʟ Hᴇʟᴘ Yᴏᴜ**",
                     parse_mode="markdown",
                     disable_web_page_preview=True
                 )
@@ -43,7 +43,7 @@ async def private_receive_handler(c: Client, m: Message):
         except UserNotParticipant:
             await c.send_message(
                 chat_id=m.chat.id,
-                text="""<i>Jᴏɪɴ ᴍʏ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴜꜱᴇ ᴍᴇ 🔐</i>""",
+                text="""<i> Join update Channel to use me🔐</i>""",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
